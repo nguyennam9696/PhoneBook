@@ -1,0 +1,24 @@
+<html ng-app='PhonebookApp'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Phone Book</title>
+  <base href='/'>
+  <link rel='stylesheet' href='src/bootstrap.min.css'>
+</head>
+<body>
+  <div class='container'>
+    <div class='page-header'>
+      <h1>Contacts {{message}}</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12" ng-view></div>
+    </div>
+  </div>
+  <script src='lib/bower_components/jquery/dist/jquery.min.js'></script>
+  <script src='lib/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+  <script src='lib/bower_components/angular/angular.min.js'></script>
+  <script src='lib/bower_components/angular-route/angular-route.min.js'></script>
+  <script src='src/app.js'></script>
+  <script src='src/controller.js'></script>
+</body>
+</html>
